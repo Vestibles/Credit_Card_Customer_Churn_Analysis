@@ -53,15 +53,11 @@ Generative AI (e.g., Grok by xAI) aided ideation (brainstorming hypotheses), des
 Data privacy: Dataset is anonymised (no personal identifiers) and compliant with GDPR laws and standards. Bias/fairness: Potential income or gender biases in churn prediction—checked via stratified sampling if modeling; mitigated by transparent reporting of associations (e.g., lower income linked to churn, but not causal). No legal issues were identified; societal: Insights could inform equitable retention (e.g., support for low-income groups). 
 
 ### Dashboard Design
-Dashboard pages (using Power BI):
-1. Home: Overview with churn rate summary (card visual), dataset descriptives table (matrix visual), and slicers for filtering variables (e.g., Income_Category, Gender_M).
-2. Continuous Analysis: Boxplots or line charts for variables like Total_Trans_Ct (scatter plot with jitter), test results displayed in a table visual.
-3. Categorical Analysis: Bar charts for income vs. churn (stacked bar chart), chi-square results in a text box or KPI visual.
-4. Insights: Key findings summary (text box), export button for reports (Power BI export feature).
+Dashboard pages (using Power BI): https://app.powerbi.com/links/xui195iWqW?ctid=c233c072-135b-431d-af59-35e05babf941&pbi_source=linkShare
+1. Home: Overview with churn rate, Total Customers (card visual), Total Customers vs Total churned (Pie Chart) Total Churned vs No of dependants Churn vs Credit limit
 
-Updates: Initially planned heatmaps for correlations but switched to bar charts for clearer categorical insights.
+Updates: Initially planned heatmaps for correlations but switched to bar charts for clearer categorical insights.With the size of the file processing was very slow so data was trimmed randomly to 1000 rows.
 
-Communication: Technical audiences via detailed test stats in tables and tooltips; non-technical via intuitive visuals (e.g., color-coded churn rates) and plain-language summaries in text boxes. Design: User-centric—drag-and-drop interface, slicers for interactivity, tooltips explaining stats (e.g., "p-value <0.05 means significant difference"), optimized for desktop and mobile views.
 
 ### Unfixed Bugs
 No major unfixed bugs; minor issue with Power BI rendering complex visuals in some environments (e.g., outdated DirectQuery mode), not fixed due to framework limitation (resolved by switching to Import mode). Recognized gaps: Limited experience with Power BI DAX—addressed by online tutorials and AI assistance. Peer feedback (hypothetical from collaborators): Suggested adding confidence intervals to visuals; incorporated using custom measures.
